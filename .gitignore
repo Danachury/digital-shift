@@ -1,5 +1,2 @@
 .idea/
 node_modules/
-
-git remote -v -> listar
-git remote add origin  ->
