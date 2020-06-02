@@ -6,10 +6,20 @@ Developed in NodeJs, this project contains an example to describe how works  Con
 # Start in dev mode
 We Assume that [NodeJs](https://nodejs.org) is installed in your machine.
 
+Install dependencies:
 ```
-npm start-dev
+npm install
 ```
-<b>Note:</b> Previous command Restart Server when detect any change on source code
+
+Start server:
+```
+npm start
+```
+
+Start server in DEV mode (this command restart server when detect any change on source code):
+```
+npm run start-dev
+```
 
 To stop server you should use ``CTRL+C`` command
 
