@@ -7,7 +7,7 @@ pipeline {
    }
 
    stages {
-      stage('Build') {
+      stage('Install Dependencies') {
          steps {
             sh 'npm install'
          }
@@ -15,7 +15,7 @@ pipeline {
    }
 
    stages {
-      stage('Build') {
+      stage('Start Server') {
          steps {
             sh 'npm start'
          }
