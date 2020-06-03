@@ -9,7 +9,15 @@ pipeline {
    stages {
       stage('Build') {
          steps {
-            sh 'npm --version'
+            sh 'npm install'
+         }
+      }
+   }
+
+   stages {
+      stage('Build') {
+         steps {
+            sh 'npm start'
          }
       }
    }
