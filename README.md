@@ -49,3 +49,8 @@ docker logs -f digital-shift
 docker rm -f digital-shift;
 docker rmi -f digital-shift
 ```
+
+## Run Jenkins
+```
+sh ./run-jenkins.sh
+```
