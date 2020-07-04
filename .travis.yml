@@ -6,6 +6,9 @@ install:
 script:
   - npm test
 deploy:
-    provider: heroku
-    api_key: ...
-    app: digital-shift
+  provider: heroku
+  api_key:
+    secure: "X2GD0yx79qHDAM/WIlj0Cfmcj4E8Byze6u16z3HoLElsSL9X71OFHveQfM66d9VeRZfGDIR8dzSpLMwTrnqkvZC38ZsGFi28BEW6C2Tcr9uSZ6st5DUp8FyEk3nUFi5F9YbyM9speWoCCAS5ePapziIe2C3KKVMMUiuH25KVyEzY9ON2Bd5XpJbQ8FiR5yw05gtMqpBX/QnCfPY3uAm7J+YH2yI3WvXGedGv0Eitb5i1IOtgxjkHUWfzrgOKjF8sXpOle3+HPISHv+XNwNej4jkqjDlRcP4T5DroQefMPkulljVAzTdTIB83npCEMzTj/zvcHdo5I8DiupztL3OGDuP+TYQgTs5MN5uIblmU2QAOve8cAds2j8dwaDRFMeGVGRcfw9mGKMxhQMohtuOfm6LwylqzGAZKaghkrBae9v8rojA5a3Lbb8kOHYBkqtdTeWF7Qzlrb/n2V3nYiwJ/zviNff8k2v2N4ySvoSqU1hHWPPoYnpu6bbs7r+koZRSfHL9kLXLfEpec8r7vmTVQOgpyAod2Eh8RDJJFFmFyHX7pd2+mo7UhA/J3bYgHysA+JkDDF36UmD5H5vfiHfveg8nl3E1E0GMDoyE0MRRbrAOUTv1zIMDEk8Y0UeoefDDxvMpTUQ0pcommWWTxx3ixJyTVD8Sdd/b6BSDsGNJRY08="
+  app: digital-shift
+  on:
+    repo: Danachury/digital-shift
