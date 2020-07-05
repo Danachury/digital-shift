@@ -5,6 +5,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
+const homeRouter = require('./routes/home');
+const loginRouter = require('./routes/login');
+
 const mongoose = require('mongoose');
 
 const app = express();
@@ -21,6 +24,8 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Routers Setup
 app.use('/', indexRouter);
+app.use('/home', homeRouter);
+app.use('/login', loginRouter);
 
 // DB Configuration ToDo: Enable when choose DB
 // mongoose.connect(
