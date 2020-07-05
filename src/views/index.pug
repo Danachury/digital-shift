@@ -1,4 +1,21 @@
 extends layout
 
 block content
-    p= message
+section.container-fluid
+p Login to your account
+        form(action='POST' id='loginForm')
+            div.form-group
+                label(for='username') Username
+                input#username.form-control(aria-describedby='usernameHelp')
+                small#usernameHelp.form-text.text-muted Username or Email.
+            div.form-group
+                label(for='password') Password
+                input#password.form-control(aria-describedby='passwordHelp')
+                small#passwordHelp.form-text.text-muted
+
+            div.form-group.form-check
+                input#loginRemember.form-check-input(type='checkbox')
+                label.form-check-label(for='loginRemember') Remember me
+
+            button#loginBtn.btn.btn-primary(type='submit') Log in
+            
