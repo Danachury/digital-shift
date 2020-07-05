@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    section.container-fluid.flex-center
+        div.form-content
+            p.form-title Login to your account
+            form#loginForm(action='/login' method='POST')
+                div.form-group
+                    label(for='username') Username
+                    input#username.form-control(aria-describedby='usernameHelp' name='username' autofocus)
+                    small#usernameHelp.form-text.text-muted Username or Email.
+                div.form-group
+                    label(for='password') Password
+                    input#password.form-control(type='password' aria-describedby='passwordHelp' name='password')
+                    small#passwordHelp.form-text.text-muted
+
+                div.form-group.form-check
+                    input#loginRemember.form-check-input(type='checkbox')
+                    label.form-check-label(for='loginRemember') Remember me
+
+                div.flex-space-between
+                    a(href='/') Cancel
+                    button#loginBtn.btn.btn-primary(type='submit') Log in
+
+                if loginError
+                    div.alert.alert-danger.margin-top= loginError
