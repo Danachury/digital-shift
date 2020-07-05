@@ -14,7 +14,7 @@ services:
     container_name: mongodb
     tty: true
     volumes:
-      - ./db:/docker-entrypoint-initdb.d
+      - .db/:/docker-entrypoint-initdb.d
     ports:
       - 27017:27017
     command: mongod

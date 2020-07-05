@@ -23,6 +23,10 @@ npm run start-dev
 
 To stop server you should use ``CTRL+C`` command
 
+# Unit Tests
+```
+npm test
+```
 
 # Docker
 Run application with Docker if you need <b>Simulate or Build an image for Production Environment</b>.
@@ -48,4 +52,9 @@ docker logs -f digital-shift
 ```
 docker rm -f digital-shift;
 docker rmi -f digital-shift
+```
+
+## Run Jenkins
+```
+sh ./run-jenkins.sh
 ```
