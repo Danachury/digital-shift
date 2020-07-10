@@ -1,5 +1,8 @@
 class User {
 
+   username;
+   password;
+
    static name = () => 'digital-shift';
 
    static formattedName = () => {

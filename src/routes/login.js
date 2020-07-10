@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
    if (username && password) {
       res.redirect(`home?username=${username}`);
    } else {
-      res.render('login', { loginError: 'Invalid Username and Password combination.' });
+      res.render('login', { error: 'Invalid Username and Password combination.' });
    }
    res.end();
 });
